@@ -13,9 +13,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText inchesInput;
     private TextView centimetersOutput;
 
-    public MainActivity(Button convertButton) {
-    }
-
     @SuppressLint("DefaultLocale")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         inchesInput = findViewById(R.id.textInputEditText);
         centimetersOutput = findViewById(R.id.textView);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button convertButton = findViewById(R.id.buttonConvert);
+        Button convertButton = findViewById(R.id.buttonConvert);
 
         convertButton.setOnClickListener(v -> {
             String inchesString = inchesInput.getText().toString();

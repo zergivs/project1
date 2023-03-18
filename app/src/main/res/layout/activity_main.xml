@@ -34,6 +34,7 @@
         android:id="@+id/textView"
         android:layout_width="259dp"
         android:layout_height="115dp"
+        android:background="#D1D0D0"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
         app:layout_constraintEnd_toEndOf="parent"
